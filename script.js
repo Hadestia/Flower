@@ -1,10 +1,16 @@
-onload = () => {
-  document.body.classList.remove("container");
-};
+const div = document.getElementById("bg");
+const audio = document.getElementById("music");
+
+div.addEventListener("click", () => {
+	try {
+		audio.volume = 0.7;
+		audio.play();
+	} catch (err) {
+		console.error(err);
+	}
+});
 
 window.addEventListener("DOMContentLoaded", event => {
-  console.log('Trying to play Music');
-  const audio = document.querySelector("audio");
-  audio.volume = 0.5;
-  audio.play();
+  document.body.classList.remove("container");
+  
 });
