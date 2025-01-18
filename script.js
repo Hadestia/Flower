@@ -12,5 +12,4 @@ div.addEventListener("click", () => {
 
 window.addEventListener("DOMContentLoaded", event => {
   document.body.classList.remove("container");
-  
 });
