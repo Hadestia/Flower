@@ -3,7 +3,8 @@ onload = () => {
 };
 
 window.addEventListener("DOMContentLoaded", event => {
+  console.log('Trying to play Music');
   const audio = document.querySelector("audio");
-  audio.volume = 0.2;
+  audio.volume = 0.5;
   audio.play();
 });
